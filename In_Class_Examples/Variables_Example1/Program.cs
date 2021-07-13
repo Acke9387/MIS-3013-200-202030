@@ -13,10 +13,12 @@ namespace Variables_Example1
 {
     class Program
     {
+        int number = 0; // this is a class level variable
+
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to my application! What is your name? >>");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine(); // this is a local variable
 
             Console.WriteLine(name + ", what is your monthly income? >>");
             string response = Console.ReadLine();
