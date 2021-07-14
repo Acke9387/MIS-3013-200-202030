@@ -26,8 +26,10 @@ namespace Conditionals_Example1
             {
                 Console.ForegroundColor = ConsoleColor.Red;
             }
-
+            
             Console.WriteLine($"The difference between your income and expenses is {netIncome.ToString("c3")}.");
+
+
         }
     }
 }
