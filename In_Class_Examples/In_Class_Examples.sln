@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loops_Example4", "Loops_Exa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum_Example1", "Enum_Example1\Enum_Example1.csproj", "{434E3829-C447-4DEA-83A0-44B5771F722B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings_Example1", "Strings_Example1\Strings_Example1.csproj", "{ECB169EE-67FC-4EF9-AE86-E4E11CF12F15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{434E3829-C447-4DEA-83A0-44B5771F722B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{434E3829-C447-4DEA-83A0-44B5771F722B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{434E3829-C447-4DEA-83A0-44B5771F722B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB169EE-67FC-4EF9-AE86-E4E11CF12F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB169EE-67FC-4EF9-AE86-E4E11CF12F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB169EE-67FC-4EF9-AE86-E4E11CF12F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB169EE-67FC-4EF9-AE86-E4E11CF12F15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
