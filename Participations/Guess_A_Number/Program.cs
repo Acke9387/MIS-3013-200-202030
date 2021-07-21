@@ -6,32 +6,80 @@ namespace Guess_A_Number
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the minimum value >>");
-            string input = Console.ReadLine();
+            string input;
+            int min, max;
 
-            int min = Convert.ToInt32(input);
+            do
+            {
+                do
+                {
+                    Console.WriteLine("Please enter the minimum value >>");
+                    input = Console.ReadLine();
+                } while (int.TryParse(input, out min) == false);
 
-            Console.WriteLine("Please enter the maximum value >>");
-            input = Console.ReadLine();
-            int max = Convert.ToInt32(input);
+                // int min = Convert.ToInt32(input);
+
+                do
+                {
+                    Console.WriteLine("Please enter the maximum value >>");
+                    input = Console.ReadLine();
+                } while (int.TryParse(input, out max) == false);
+                //int max = Convert.ToInt32(input); 
+
+                if (min >= max)
+                {
+                    Console.WriteLine("The minimum must be less than the maximum.");
+                }
+            } while (min >= max);
+
 
             Random rand = new Random();
             int rando = rand.Next(min, max + 1);
 
-            Console.WriteLine(rando);
+            //Was just used for testing
+            //Console.WriteLine(rando);
             Console.WriteLine();
             int guess;
-
+            int guessCount = 0;
             do
             {
-                Console.WriteLine("What is your guess? >>");
-                input = Console.ReadLine();
-                guess = Convert.ToInt32(input);
+                do
+                {
+                    Console.WriteLine("What is your guess? >>");
+                    input = Console.ReadLine();
+                } while (int.TryParse(input, out guess) == false);
+                //guess = Convert.ToInt32(input);
+
+
+
+                guessCount++;
+
+                if (guess > rando)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("You guessed too high.");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                }
+                else if (guess < rando)
+                {
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("You guessed too low.");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                }
 
 
             } while (guess != rando);
 
-            Console.WriteLine("Congratulations, you guessed correctly!");
+            switch (guessCount)
+            {
+                case 1:
+                    Console.WriteLine($"Congratulations, it took you {guessCount.ToString("n0")} guess to get it correct!");
+                    break;
+
+                default:
+                    Console.WriteLine($"Congratulations, it took you {guessCount.ToString("n0")} guesses to get it correct!");
+                    break;
+            }
 
         }
     }
