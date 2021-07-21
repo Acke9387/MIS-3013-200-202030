@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sum_Of_3_Numbers", "Sum_Of_3_Numbers\Sum_Of_3_Numbers.csproj", "{7B562D83-4EF4-45A9-B7C1-0F85FF377175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coin_Toss", "Coin_Toss\Coin_Toss.csproj", "{E6DC117E-6287-403E-9461-226247565698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coin_Toss", "Coin_Toss\Coin_Toss.csproj", "{E6DC117E-6287-403E-9461-226247565698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guess_A_Number", "Guess_A_Number\Guess_A_Number.csproj", "{9FB63AA3-BE6C-4FCA-A720-E07C7486A4CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E6DC117E-6287-403E-9461-226247565698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6DC117E-6287-403E-9461-226247565698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6DC117E-6287-403E-9461-226247565698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB63AA3-BE6C-4FCA-A720-E07C7486A4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB63AA3-BE6C-4FCA-A720-E07C7486A4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB63AA3-BE6C-4FCA-A720-E07C7486A4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB63AA3-BE6C-4FCA-A720-E07C7486A4CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
