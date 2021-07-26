@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coin_Toss", "Coin_Toss\Coin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guess_A_Number", "Guess_A_Number\Guess_A_Number.csproj", "{9FB63AA3-BE6C-4FCA-A720-E07C7486A4CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Processing_A_CSV_File", "Processing_A_CSV_File\Processing_A_CSV_File.csproj", "{554EEE74-8621-40E7-BCE9-CDBE10133BB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Processing_A_CSV_File", "Processing_A_CSV_File\Processing_A_CSV_File.csproj", "{554EEE74-8621-40E7-BCE9-CDBE10133BB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String_Manipulation", "String_Manipulation\String_Manipulation.csproj", "{D10AD837-8C70-4413-8E73-6C57CFF490A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{554EEE74-8621-40E7-BCE9-CDBE10133BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{554EEE74-8621-40E7-BCE9-CDBE10133BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{554EEE74-8621-40E7-BCE9-CDBE10133BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10AD837-8C70-4413-8E73-6C57CFF490A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10AD837-8C70-4413-8E73-6C57CFF490A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10AD837-8C70-4413-8E73-6C57CFF490A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10AD837-8C70-4413-8E73-6C57CFF490A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
