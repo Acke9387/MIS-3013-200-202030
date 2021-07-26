@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Processing_A_CSV_File", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String_Manipulation", "String_Manipulation\String_Manipulation.csproj", "{D10AD837-8C70-4413-8E73-6C57CFF490A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions_Calculator", "Functions_Calculator\Functions_Calculator.csproj", "{AB254A9A-D47D-49E8-895A-209D3FFE3074}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D10AD837-8C70-4413-8E73-6C57CFF490A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D10AD837-8C70-4413-8E73-6C57CFF490A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D10AD837-8C70-4413-8E73-6C57CFF490A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB254A9A-D47D-49E8-895A-209D3FFE3074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB254A9A-D47D-49E8-895A-209D3FFE3074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB254A9A-D47D-49E8-895A-209D3FFE3074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB254A9A-D47D-49E8-895A-209D3FFE3074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
