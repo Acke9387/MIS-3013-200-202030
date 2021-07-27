@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace Processing_A_CSV_File
@@ -19,6 +20,12 @@ namespace Processing_A_CSV_File
             double salesFor2004 = 0;
             double salesFor2005 = 0;
 
+            //double jan = 0;
+            //double feb = 0;
+            //double mar = 0;
+
+            double[] monthSales = new double[13];            
+
             for (int i = 1; i < contents.Length; i++)
             {
                 //     0              1           2             3         4
@@ -29,6 +36,7 @@ namespace Processing_A_CSV_File
                 double sale = Convert.ToDouble(pieces[4]);
                 int year = Convert.ToInt32(pieces[9]);
                 string status = pieces[6];
+                int month = Convert.ToInt32(pieces[8]);
 
                 if (status.ToLower() == "shipped")
                 {
@@ -47,7 +55,9 @@ namespace Processing_A_CSV_File
                     else
                     {
                         Console.WriteLine($"ERROR: No year for {year}");
-                    } 
+                    }
+
+                    monthSales[month] += sale;
                 }
 
                 //Console.WriteLine(sale);
@@ -56,6 +66,20 @@ namespace Processing_A_CSV_File
             Console.WriteLine($"The sales for 2003 were {salesFor2003.ToString("C")}");
             Console.WriteLine($"The sales for 2004 were {salesFor2004.ToString("C")}");
             Console.WriteLine($"The sales for 2005 were {salesFor2005.ToString("C")}");
+
+            Console.WriteLine($"The sales for January were {monthSales[1].ToString("C")}");
+            Console.WriteLine($"The sales for February were {monthSales[2].ToString("C")}");
+            Console.WriteLine($"The sales for March were {monthSales[3].ToString("C")}");
+            Console.WriteLine($"The sales for April were {monthSales[4].ToString("C")}");
+            Console.WriteLine($"The sales for May were {monthSales[5].ToString("C")}");
+            Console.WriteLine($"The sales for June were {monthSales[6].ToString("C")}");
+            Console.WriteLine($"The sales for July were {monthSales[7].ToString("C")}");
+            Console.WriteLine($"The sales for August were {monthSales[8].ToString("C")}");
+            Console.WriteLine($"The sales for September were {monthSales[9].ToString("C")}");
+            Console.WriteLine($"The sales for October were {monthSales[10].ToString("C")}");
+            Console.WriteLine($"The sales for November were {monthSales[11].ToString("C")}");
+            Console.WriteLine($"The sales for December were {monthSales[12].ToString("C")}");
+
 
 
 
