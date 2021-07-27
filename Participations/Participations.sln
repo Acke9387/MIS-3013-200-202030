@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "All_Types_of_Collections_Pt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "All_Types_of_Collections_Pt3", "All_Types_of_Collections_Pt3\All_Types_of_Collections_Pt3.csproj", "{F844B9DC-DE6B-4F19-AB51-BFF5DC1D73FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections_Min_Max_Avg", "Collections_Min_Max_Avg\Collections_Min_Max_Avg.csproj", "{33F9B22C-03C0-48E2-810B-E74E3C0125BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F844B9DC-DE6B-4F19-AB51-BFF5DC1D73FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F844B9DC-DE6B-4F19-AB51-BFF5DC1D73FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F844B9DC-DE6B-4F19-AB51-BFF5DC1D73FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33F9B22C-03C0-48E2-810B-E74E3C0125BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F9B22C-03C0-48E2-810B-E74E3C0125BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F9B22C-03C0-48E2-810B-E74E3C0125BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F9B22C-03C0-48E2-810B-E74E3C0125BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
