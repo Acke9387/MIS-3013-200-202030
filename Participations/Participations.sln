@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String_Manipulation", "Stri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functions_Calculator", "Functions_Calculator\Functions_Calculator.csproj", "{AB254A9A-D47D-49E8-895A-209D3FFE3074}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "All_Types_of_Collections_Pt1", "All_Types_of_Collections\All_Types_of_Collections_Pt1.csproj", "{5573B54C-6B08-4930-BCC6-2F505400AABC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "All_Types_of_Collections_Pt1", "All_Types_of_Collections\All_Types_of_Collections_Pt1.csproj", "{5573B54C-6B08-4930-BCC6-2F505400AABC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "All_Types_of_Collections_Pt2", "All_Types_of_Collections_Pt2\All_Types_of_Collections_Pt2.csproj", "{CF0AE907-865E-428E-A807-D40CCA13B310}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "All_Types_of_Collections_Pt2", "All_Types_of_Collections_Pt2\All_Types_of_Collections_Pt2.csproj", "{CF0AE907-865E-428E-A807-D40CCA13B310}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "All_Types_of_Collections_Pt3", "All_Types_of_Collections_Pt3\All_Types_of_Collections_Pt3.csproj", "{F844B9DC-DE6B-4F19-AB51-BFF5DC1D73FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "All_Types_of_Collections_Pt3", "All_Types_of_Collections_Pt3\All_Types_of_Collections_Pt3.csproj", "{F844B9DC-DE6B-4F19-AB51-BFF5DC1D73FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections_Min_Max_Avg", "Collections_Min_Max_Avg\Collections_Min_Max_Avg.csproj", "{33F9B22C-03C0-48E2-810B-E74E3C0125BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections_Min_Max_Avg", "Collections_Min_Max_Avg\Collections_Min_Max_Avg.csproj", "{33F9B22C-03C0-48E2-810B-E74E3C0125BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple_Method_Speak", "Simple_Method_Speak\Simple_Method_Speak.csproj", "{6B5E9133-476F-42D7-9DCB-152E75A3F38E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{33F9B22C-03C0-48E2-810B-E74E3C0125BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33F9B22C-03C0-48E2-810B-E74E3C0125BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33F9B22C-03C0-48E2-810B-E74E3C0125BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5E9133-476F-42D7-9DCB-152E75A3F38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5E9133-476F-42D7-9DCB-152E75A3F38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5E9133-476F-42D7-9DCB-152E75A3F38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5E9133-476F-42D7-9DCB-152E75A3F38E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

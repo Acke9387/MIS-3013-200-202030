@@ -24,8 +24,8 @@ namespace Functions_Example2
 
             Random rand = new Random();
             int randomIndexOfGrade = rand.Next(0, mis3013Grades.Count); // get a random int that corresponds with the bounds of our list
-            double randomGrade = mis3013Grades[randomIndexOfGrade]; // get the grade at that random position
-            char letter = ConvertGradeToLetterGrade(randomGrade); // convert that grade to a letter grade
+            double randomGrade = mis3013Grades[randomIndexOfGrade];     // get the grade at that random position
+            char letter = ConvertGradeToLetterGrade(randomGrade);       // convert that grade to a letter grade
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"\n{randomGrade} is a {letter}.");
@@ -92,5 +92,6 @@ namespace Functions_Example2
 
             return letter;
         }
+
     }
 }
