@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple_Method_Speak", "Simp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes_Toy", "Classes_Toy\Classes_Toy.csproj", "{51307684-4D7B-4C73-91C9-60368A095A27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions_DoubleInputValidation", "Functions_DoubleInputValidation\Functions_DoubleInputValidation.csproj", "{402955B0-1C2D-4394-93BB-1C8BF582DF51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{51307684-4D7B-4C73-91C9-60368A095A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51307684-4D7B-4C73-91C9-60368A095A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51307684-4D7B-4C73-91C9-60368A095A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{402955B0-1C2D-4394-93BB-1C8BF582DF51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402955B0-1C2D-4394-93BB-1C8BF582DF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402955B0-1C2D-4394-93BB-1C8BF582DF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402955B0-1C2D-4394-93BB-1C8BF582DF51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
