@@ -32,8 +32,34 @@ namespace Classes_Reading_A_File
         public string ContactFirstName { get; set; }
         public string DealSize { get; set; }
 
-
-
+        public Sale()
+        {
+            OrderNumber         = 0;
+            QuantityOrdered     = 0;
+            PriceEach           = 0;
+            OrderLineNumber     = 0;
+            Sales               = 0;
+            OrderDate           = DateTime.Now;
+            Status              = string.Empty;
+            Quarter_ID          = 0;
+            Month_ID            = 0;
+            Year_ID             = 0;
+            ProductLine         = string.Empty;
+            MSRP                = 0;
+            ProductCode         = string.Empty;
+            CustomerName        = string.Empty;
+            Phone               = string.Empty;
+            AddressLine1        = string.Empty;
+            AddressLine2        = string.Empty;
+            City                = string.Empty;
+            State               = string.Empty;
+            PostalCode          = string.Empty;
+            Country             = string.Empty;
+            Territory           = string.Empty;
+            ContactLastName     = string.Empty;
+            ContactFirstName    = string.Empty;
+            DealSize            = string.Empty;
+        }
 
     }
 }
