@@ -25,15 +25,53 @@ namespace Classes_Reading_A_File
                 sales.Add(s);
             }
 
-            OutputAllSalesFromCountry(sales, "USA");
-            OutputAllSalesFromCountry(sales, "France");
+            //OutputAllSalesFromCountry(sales, "USA");
+            //OutputAllSalesFromCountry(sales, "France");
             OutputAllSalesWithAProfit(sales);
+            OutputAllSalesWithALoss(sales);
 
         }
 
         private static void OutputAllSalesWithAProfit(List<Sale> sales)
         {
-            throw new NotImplementedException();
+            string s = "".PadLeft(10, '*') + $"Sales with a Profit" + "".PadRight(10, '*');
+            Console.WriteLine(s);
+            int count = 0;
+            foreach (Sale sale in sales)
+            {
+                if (sale.Profit() > 0)
+                {
+                    Console.Write(sale+"\t" );
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(sale.Profit());
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine();
+                    count++;
+                }
+            }
+            Console.WriteLine($"\nThere were {count} # of sales with a profit.");
+            Console.WriteLine("".PadLeft(s.Length, '*'));
+        }
+
+        private static void OutputAllSalesWithALoss(List<Sale> sales)
+        {
+            string s = "".PadLeft(10, '*') + $"Sales with a Loss" + "".PadRight(10, '*');
+            Console.WriteLine(s);
+            int count = 0;
+            foreach (Sale sale in sales)
+            {
+                if (sale.Profit() < 0)
+                {
+                    Console.Write(sale + "\t");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write(sale.Profit());
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine();
+                    count++;
+                }
+            }
+            Console.WriteLine($"\nThere were {count} # of sales with a loss.");
+            Console.WriteLine("".PadLeft(s.Length, '*'));
         }
 
         private static void OutputAllSalesFromCountry(List<Sale> sales, string country)
