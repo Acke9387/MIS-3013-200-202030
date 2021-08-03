@@ -10,25 +10,36 @@ namespace Classes_ToyBox
 
             List<ToyBox> toyboxes = new List<ToyBox>();
 
-            ToyBox tb1 = new ToyBox();
-            tb1.Location = "Norman, OK";
-            tb1.Owner = "Darby";
-
             do
             {
-                Toy toy1 = new Toy();
-                Console.WriteLine("Enter Manufacturer of the Toy >>");
-                toy1.Manufacturer = Console.ReadLine() ;
-                Console.WriteLine("Enter the Name of the Toy >>");
-                toy1.Name = Console.ReadLine();
-                Console.WriteLine("Enter the Name of the Toy >>");
-                toy1.Price = 14.99;
-                toy1.AddNote("Crazy fun for the whole family!");
-                toy1.AddNote("Ages 5+");
-                tb1.Toys.Add(toy1);
+                ToyBox tb1 = new ToyBox();
+                tb1.Location = "Norman, OK";
+                tb1.Owner = "Darby";
 
-                Console.WriteLine("Do you have another toy to enter for {tb1.Owner}'s ToyBox? yes or no >>");
+                toyboxes.Add(tb1);
+                Console.WriteLine($"Do you have another ToyBox to enter? yes or no >>");
             } while (Console.ReadLine().ToLower()[0] == 'y');
+
+            for (int i = 0; i < toyboxes.Count; i++)
+            {
+                Console.WriteLine($"Time to fill {toyboxes[i].Owner}'s ToyBox!");
+
+                do
+                {
+                    Toy toy1 = new Toy();
+                    Console.WriteLine("Enter Manufacturer of the Toy >>");
+                    toy1.Manufacturer = Console.ReadLine();
+                    Console.WriteLine("Enter the Name of the Toy >>");
+                    toy1.Name = Console.ReadLine();
+                    Console.WriteLine("Enter the Name of the Toy >>");
+                    toy1.Price = 14.99;
+                    toy1.AddNote("Crazy fun for the whole family!");
+                    toy1.AddNote("Ages 5+");
+                   
+
+                    Console.WriteLine($"Do you have another toy to enter for {tb1.Owner}'s ToyBox? yes or no >>");
+                } while (Console.ReadLine().ToLower()[0] == 'y'); 
+            }
 
             Toy toy2 = new Toy("Hours of fun!");
             toy2.Manufacturer = "Nintendo";
