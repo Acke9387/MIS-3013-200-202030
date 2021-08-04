@@ -7,14 +7,16 @@ namespace Classes_ToyBox
     {
         static void Main(string[] args)
         {
-
             List<ToyBox> toyboxes = new List<ToyBox>();
 
+            // Have the user input as many ToyBoxes as they want
             do
             {
                 ToyBox tb1 = new ToyBox();
-                tb1.Location = "Norman, OK";
-                tb1.Owner = "Darby";
+                Console.WriteLine("Who is the owner of the ToyBox? >>");
+                tb1.Owner = Console.ReadLine();
+                Console.WriteLine($"Where is {tb1.Owner}'s ToyBox Located? >>");
+                tb1.Location = Console.ReadLine();
 
                 toyboxes.Add(tb1);
                 Console.WriteLine($"Do you have another ToyBox to enter? yes or no >>");
@@ -22,33 +24,25 @@ namespace Classes_ToyBox
 
             for (int i = 0; i < toyboxes.Count; i++)
             {
-                Console.WriteLine($"Time to fill {toyboxes[i].Owner}'s ToyBox!");
+                Console.WriteLine($"Time to fill {toyboxes[i].Owner}'s ToyBox w/ Toys!");
 
                 do
                 {
                     Toy toy1 = new Toy();
                     Console.WriteLine("Enter Manufacturer of the Toy >>");
                     toy1.Manufacturer = Console.ReadLine();
-                    Console.WriteLine("Enter the Name of the Toy >>");
+                    Console.WriteLine($"Enter the Name of the Toy made by {toy1.Manufacturer} >>");
                     toy1.Name = Console.ReadLine();
-                    Console.WriteLine("Enter the Name of the Toy >>");
-                    toy1.Price = 14.99;
-                    toy1.AddNote("Crazy fun for the whole family!");
-                    toy1.AddNote("Ages 5+");
-                   
+                    Console.WriteLine($"Enter the price of the {toy1.Name}>>");
+                    toy1.Price = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine($"What notes do you have for {toy1.Name}? Seperate each one with a \\n");
+                    toy1.AddNote(Console.ReadLine());
 
-                    Console.WriteLine($"Do you have another toy to enter for {tb1.Owner}'s ToyBox? yes or no >>");
+                    toyboxes[i].Toys.Add(toy1);
+
+                    Console.WriteLine($"Do you have another toy to enter for {toyboxes[i].Owner}'s ToyBox? yes or no >>");
                 } while (Console.ReadLine().ToLower()[0] == 'y'); 
             }
-
-            Toy toy2 = new Toy("Hours of fun!");
-            toy2.Manufacturer = "Nintendo";
-            toy2.Name = "Switch";
-            toy2.Price = 244.99;
-            //tb1.Toys.Add(toy1);
-            tb1.Toys.Add(toy2);
-
-            toyboxes.Add(tb1);
 
             foreach (ToyBox currentToyBox in toyboxes)
             {
@@ -58,6 +52,12 @@ namespace Classes_ToyBox
                     Console.WriteLine();
                     Console.WriteLine(toyInCurrentBox);
                 }
+
+                Console.WriteLine("".PadLeft(10,'-') + "Random Toy!" + "".PadLeft(10, '-'));
+                Toy randomToyFromToyBox = currentToyBox.GetRandomToy();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(randomToyFromToyBox);
+                Console.ForegroundColor = ConsoleColor.Gray;
             }
             
         }

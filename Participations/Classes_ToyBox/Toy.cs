@@ -53,7 +53,7 @@ namespace Classes_ToyBox
 
         public override string ToString()
         {
-            return $"{Name} is made by {Manufacturer} and costs {Price}.  Notes: {Notes}.";
+            return $"{Name} (Aisle:{GetAisle()} is made by {Manufacturer} and costs {Price}.  Notes: {Notes}.";
         }
     }
 }
